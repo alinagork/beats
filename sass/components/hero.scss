@@ -1,0 +1,44 @@
+@import '../settings/vars.scss';
+
+.hero {
+  background-color: $gray;
+  min-height: 655px;
+  height: 100vh;
+  color: $black;
+
+  &::after {
+    position: absolute;
+    bottom: -47px;
+    right: 27.6%;
+    content: url("../../img/icons/rectangle small.png");
+  }
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 89px 64px 81px;
+  background: url("../../img/content/beats hero.png") right 15% center / 47% auto no-repeat;
+}
+
+
+.hero__title-section {
+  width: 432px;
+  height: 178px;
+  margin-bottom: 214px;
+}
+
+.hero__main-title {
+  font-size: 48px;
+  line-height: 52px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+.hero__subtitle {
+  font-size: 18px;
+  margin-bottom: 48px;
+  padding-right: 24%;
+}
