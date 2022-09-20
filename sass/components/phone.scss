@@ -1,0 +1,18 @@
+@import '../settings/vars.scss';
+
+.phone {
+  margin-right: 26px;
+}
+
+.phone__number {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-style: none;
+}
+
+.phone__number-element {
+  width: 12px;
+  height: 14px;
+  margin-right: 6px;
+}

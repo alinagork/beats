@@ -1,0 +1,42 @@
+.benefit {
+  text-align: center;
+  margin-right: 22px;
+}
+
+.benefit__logo-wrapper {
+  display: inline-block;
+  width: 128px;
+  height: 128px;
+  position: relative;
+  background:#F2F5F4;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+
+.benefit__logo-icon {
+  width: 68px;
+  height: 68px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.benefit__content {
+  align-items: center;
+}
+
+.benefit__title {
+  font-size: 24px;
+  color: #292929;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.benefit__description {
+  font-size: 16px;
+  color:#666666;
+  width: 258px;
+  line-height: 18.51px;
+}
