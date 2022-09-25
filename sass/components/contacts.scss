@@ -1,0 +1,17 @@
+.contacts {
+  font-style: normal;
+  margin-left: rem(31px);
+
+  @include phone {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.contacts__address {
+  @include phone {
+    margin-bottom: rem(7px);
+  }
+}
