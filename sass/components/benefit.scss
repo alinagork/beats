@@ -1,0 +1,72 @@
+.benefit {
+  text-align: center;
+
+  @include phone {
+    display: flex;
+    text-align: left;
+  }
+}
+
+.benefit__logo-wrapper {
+  display: inline-block;
+  width: rem(128px);
+  height: rem(128px);
+  position: relative;
+  background:#F2F5F4;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: rem(18px);
+
+  @include phone {
+    margin-bottom: 0;
+  }
+}
+
+.benefit__logo-icon {
+  width: rem(58px);
+  height: rem(58px);
+  position: absolute;
+  top: 47%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+
+  @include phone {
+    top: 51%;
+    left: 50%;
+  }
+}
+
+.benefit__content {
+  align-items: center;
+  margin-bottom: rem(20px);
+}
+
+.benefit__title {
+  font-size: rem(24px);
+  color: #292929;
+  font-weight: bold;
+  margin-bottom: rem(4px);
+
+  @include phone {
+    padding-left: 6%;
+    font-size: rem(24px);
+    margin-bottom: 0;
+  }
+}
+
+.benefit__description {
+  font-size: rem(16px);
+  color:#666666;
+  padding: 0% 5%;
+  line-height: 18.51px;
+
+  @include tablet{
+    padding: 0% 4%;
+  }
+
+  @include phone {
+    padding: 0% 4%;
+    font-size: rem(19px);
+    padding-left: 6%;
+  }
+}
