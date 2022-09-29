@@ -1,0 +1,31 @@
+.socials {
+  display: flex;
+  justify-content: space-between;
+
+  @include phone {
+    padding-left: 10%;
+  }
+}
+
+.socials__item {
+  margin-right: rem(11px);
+
+  @include phone {
+    margin-right: rem(13px);
+  }
+}
+
+.socials__link-icon {
+  width: rem(30px);
+  height: rem(30px);
+  fill: #B3B3B3;
+
+  @include phone {
+    width: rem(24px);
+    height: rem(24px);
+  }
+
+  &:hover {
+    fill: black;
+  }
+}
