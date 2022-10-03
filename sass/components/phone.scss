@@ -1,0 +1,35 @@
+@import '../settings/vars.scss';
+
+.phone {
+  margin-right: rem(26px);
+}
+
+.phone__number {
+  display: flex;
+  align-items: center;
+  font-size: rem(18px);
+  font-style: none;
+
+  &:hover {
+    color: #E01F3D;
+  }
+}
+
+.phone__number-icon {
+  flex-shrink: 0;
+}
+
+.phone__number-element {
+  width: rem(12px);
+  height: rem(14px);
+  margin-right: rem(6px);
+  fill:#292929;
+
+  &:hover {
+    fill: #E01F3D;
+  }
+}
+
+.phone__number-text {
+  white-space: nowrap;
+}

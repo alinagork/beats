@@ -1,0 +1,41 @@
+@import '../settings/vars.scss';
+
+.menu {
+  margin: 0 30px;
+  margin-bottom: 10px;
+}
+
+.header__menu {
+  @include tablet {
+    display: none;
+  }
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu__item {
+  margin-right: rem(22px);
+  margin-top: rem(10px);
+
+  &:last-child {
+    margin-right: rem(0px);
+  }
+}
+
+.menu__link {
+  font-size: rem(17px);
+  font-weight: normal;
+  white-space: nowrap;
+
+  &--color--white {
+    font-size: rem(36px);
+    line-height: rem(72px);
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+}

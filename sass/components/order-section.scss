@@ -1,0 +1,8 @@
+.order-section {
+  background: url("../../img/background/lights back.png") center center no-repeat;
+  overflow: hidden;
+
+  @include tablet {
+    min-height: rem(970px);
+  }
+}

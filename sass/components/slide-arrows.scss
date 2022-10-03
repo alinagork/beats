@@ -1,0 +1,53 @@
+.products__slide-arrows {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+
+  @include tablet {
+    top: 22%;
+  }
+
+  @include tablet {
+    top: 20%;
+  }
+}
+
+.products__slide-arrow {
+  width: rem(22px);
+  height: rem(22px);
+  border-color:#000000;
+
+  &--left {
+    border-bottom: rem(2px) solid;
+    border-left: rem(2px) solid;
+    transform: rotate(45deg);
+    margin-left: rem(-33px);
+
+    @include tablet {
+      margin-left: rem(154px);
+    }
+
+    @include phone {
+      margin-left: 0;
+    }
+  }
+
+  &--right {
+    border-bottom: rem(2px) solid;
+    border-left: rem(2px) solid;
+    transform: rotate(-135deg);
+    margin-right: rem(4px);
+
+    @include tablet {
+      margin-right: rem(126px);
+    }
+
+    @include phone {
+      margin-right: 0;
+    }
+  }
+}
