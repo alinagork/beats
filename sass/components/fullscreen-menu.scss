@@ -1,0 +1,44 @@
+.fullscreen-menu {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-color:#333537;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &--opened {
+    left: 0;
+  }
+}
+
+.fullscreen-menu__button {
+  background: none;
+  font-weight: normal;
+  position: absolute;
+  top: 42px;
+  right: 42px;
+  display: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background: transparent
+  }
+
+  @include tablet {
+    display: block;
+  }
+}
+
+.fullscreen-menu__button-icon {
+  width: rem(20px);
+  height: rem(20px);
+  fill:#FFFFFF;
+
+  &:hover {
+    fill:#0D0E0F;
+  }
+}

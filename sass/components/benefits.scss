@@ -1,0 +1,57 @@
+.benefits__section {
+  @include tablet {
+    min-height: rem(1000px);
+  }
+
+  @include phone {
+    justify-content: initial;
+    min-height: rem(870px);
+  }
+}
+
+.benefits {
+  display: flex;
+
+  @include phone {
+    flex-direction: column;
+  }
+}
+
+.benefits__item {
+  flex: 1;
+  padding: 0 3%;
+  position: relative;
+
+  @include tablet {
+    padding: 0;
+  }
+
+  @include phone {
+    padding: 0;
+    margin-bottom: rem(46px);
+  }
+
+  &::before {
+    content: url("../../img/icons/combined circles.png");
+    position: absolute;
+    top: rem(58px);
+    right: 0px;
+    transform: translateX(50%);
+
+    @include tablet {
+      display: none;
+    }
+    }
+
+  &:first-child {
+    padding-left: rem(0px);
+  }
+
+  &:last-child {
+    padding-right: rem(0px);
+
+    &::before {
+      display: none;
+    }
+  }
+}

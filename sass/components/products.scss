@@ -1,0 +1,151 @@
+@import '../settings/vars.scss';
+
+.products {
+  background-color: $gray;
+
+  @include tablet {
+    min-height: rem(890px);
+  }
+}
+
+.products__container {
+  max-width: rem(1104px);
+}
+
+.products__wrapper-list {
+  position: relative;
+  padding: 0 rem(71px) 0 rem(84px);
+
+  @include phone {
+    padding: 0 rem(28px) 0 rem(42px);
+  }
+}
+
+.products__list {
+  display: flex;
+}
+
+.products__item {
+  display: flex;
+  column-gap: rem(60px);
+  align-items: flex-end;
+
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.products__preview {
+  width: 100%;
+  max-width: rem(480px);
+  padding: 4% 0 5% 3%;
+
+  @include tablet {
+    max-width: rem(306px);
+    margin-bottom: rem(25px);
+  }
+
+  @include phone {
+    margin-bottom: rem(35px);
+    max-width: rem(306px);
+  }
+}
+
+.products__content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  row-gap: rem(25px);
+  position: relative;
+  padding-bottom: rem(90px);
+
+  @include tablet {
+    align-items: center;
+  }
+}
+
+.products__title {
+  text-transform: uppercase;
+  font-size: rem(36px);
+  line-height: rem(42px);
+  font-weight: bold;
+
+  @include tablet {
+    text-align: center;
+    font-size: rem(28px);
+    line-height: rem(25px);
+  }
+
+  @include phone {
+    padding: 0 5%;
+    font-size: rem(32px);
+  }
+}
+
+.products__description {
+  line-height: rem(19px);
+  font-size: rem(16px);
+  color:#666666;
+  padding-right: 10%;
+
+  @include tablet {
+    text-align: center;
+    padding: 0 0;
+  }
+
+  @include phone {
+    padding: 0 2%;
+  }
+}
+
+.products__features {
+  font-size: rem(16px);
+  line-height: rem(19px);
+  color:#666666;
+  display: flex;
+  align-items: flex-start;
+  column-gap: rem(86px);
+
+  @include phone {
+    column-gap: rem(64px);
+  }
+}
+
+.products__features-item {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+  margin-left: rem(18px);
+  }
+}
+
+.product__features-text {
+  font-size: $basefontsize;
+  font-weight: bold;
+  color: $black;
+}
+
+.products__footer {
+  display: flex;
+  align-items: center;
+  column-gap: rem(22px);
+
+  @include tablet {
+    column-gap: rem(52px);
+  }
+
+  @include phone {
+    column-gap: rem(22px);
+  }
+}
+
+.products__price {
+  font-size: rem(36px);
+  color:#151515;
+
+  @include tablet {
+    font-size: rem(40px);
+  }
+}
