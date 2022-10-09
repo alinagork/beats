@@ -1,0 +1,53 @@
+.products__slide-arrows {
+  position: absolute;
+  top: 48%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+
+  @include tablet {
+    top: 24%;
+  }
+
+  @include phone {
+    top: 23%;
+  }
+}
+
+.products__slide-arrow {
+  width: rem(22px);
+  height: rem(22px);
+  border-color:#000000;
+
+  &--left {
+    border-bottom: rem(2px) solid;
+    border-left: rem(2px) solid;
+    transform: rotate(45deg);
+    margin-left: rem(-17px);
+
+    @include tablet {
+      margin-left: rem(79px);
+    }
+
+    @include phone {
+      margin-left: rem(-35px);
+    }
+  }
+
+  &--right {
+    border-bottom: rem(2px) solid;
+    border-left: rem(2px) solid;
+    transform: rotate(-135deg);
+    margin-right: rem(148px);
+
+    @include tablet {
+      margin-right: rem(200px);
+    }
+
+    @include phone {
+      margin-right: rem(43px);
+    }
+  }
+}
