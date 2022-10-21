@@ -1,0 +1,14 @@
+@import '../settings/vars.scss';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: rem(21px);
+}
+
+.phone__number.header__phone-number {
+  @include tablet {
+    display: none;
+  }
+}
