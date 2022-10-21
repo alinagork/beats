@@ -1,0 +1,22 @@
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: rem(24px) 0;
+  background:#FFFFFF;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: rem(1002px);
+
+  @include phone {
+    min-width: rem(151px);
+    flex-direction: column;
+  }
+}
+
+
