@@ -1,0 +1,43 @@
+@import '../settings/vars.scss';
+
+.btn {
+  font-size: rem(16px);
+  font-weight: bold;
+  padding: rem(17px) rem(41px);
+  text-transform: uppercase;
+  border-radius: rem(100px);
+  line-height: 1;
+  background:#E01F3D;
+  color: $white;
+  border: none; 
+  cursor: pointer;
+
+  &:hover {
+    background:#CA1B36;
+  }
+
+  &--size--large {
+    padding: rem(21px) rem(41px);
+  }
+
+  &--theme--transparent {
+    background: none;
+    text-transform: none;
+    font-weight: normal;
+    padding: rem(0px) rem(29px);
+
+    &:hover {
+      color: #E01F3D;
+      background: transparent;
+    }
+  }
+
+  @include tablet {
+    padding: rem(22px) rem(44px);
+  }
+
+  @include phone {
+    font-size: rem(19px);
+    padding: rem(21px) rem(40px);
+  }
+}

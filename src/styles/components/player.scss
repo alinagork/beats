@@ -1,0 +1,143 @@
+.player-section {
+  background-color:#F8FAF9;
+
+  &::after {
+    position: absolute;
+    bottom: rem(-5677px);
+    right: 9.4%;
+    content: url("icons/red pentagonal.png");
+
+    @include tablet {
+      display: none;
+    }
+  }
+}
+
+.player-section__container {
+  align-items: center;
+}
+
+.player {
+  width: rem(662px);
+  height: rem(392px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  @include phone {
+    width: rem(395px);
+    height: rem(277px);
+  }
+}
+
+.player__container {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+
+  &.paused {
+    .player__start {
+      width: rem(14px);
+      height: rem(22px);
+      border: none;
+
+      &::after,
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: rem(5px);
+        top: 0;
+        bottom: 0;
+        background: #fff;
+      }
+
+      &::after {
+        right: 0;
+      }
+
+      &::before {
+        left: 0;
+      }
+    }
+  }
+}
+
+.player__video {
+  width: 100%;
+  height: 100%;
+}
+
+.player__controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: rem(35px);
+  background:#151515;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 rem(25px);
+}
+
+.player__start::before {
+  content: '▶';
+  width: rem(11px);
+  height: rem(16px);
+  display: inline-block;
+  color: white;
+  margin-right: rem(18px);
+
+  &.play
+   {
+    content: '▶';
+  }
+
+  &.pause
+   {
+    content: "||";
+  }
+}
+
+.player__playback {
+  width: rem(312px);
+  height: rem(5px);
+  position: relative;
+  background:#333333;
+  margin-right: rem(115px);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: block;
+    transform: translateY(-50%);
+  }
+}
+
+.player__playback-button {
+  width: rem(12px);
+  height: rem(12px);
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  position: absolute;
+  background:#333333;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.player__volume-element {
+  fill: white;
+
+  &.muted {
+    fill: red;
+  }
+}
